@@ -298,7 +298,7 @@ nav ul a {
     width: 100%;
     height: 100%;
 }
-.h2-banner-2 {
+.h3-banner-2 {
     grid-row: 2/3;
     grid-column: 2/5;
     align-self: start;
@@ -687,5 +687,182 @@ input {
 .container-nosotros ul li {
     font-size: 18px;
     padding: 5px 0;
+}
+
+
+@media (max-width: 1024px){
+    header {
+        flex-direction: column;
+        height: 24vh;
+    }
+    .logo {
+        align-self: center;
+    }
+    nav {
+        width: 100%;
+    }
+    .ingresar {
+        width: 100%;
+    }
+    .registrarse {
+        width: 100%;
+    }
+    .contacto a {
+        margin-left: 10px;
+    }
+    .section-3 h2 {
+        font-size: 18px;
+    }
+    .section-4 {
+        width: 90%;
+    }
+    .main-nosotros {
+        font-size: 15px;
+    }
+    .h2-terapias {
+        margin-top: 322px
+    }
+    .h2-recursos {
+        margin-top: 322px
+    }
+    .h2-reiki {
+        margin-top: 322px
+    }
+    .h2-esoterismo {
+        margin-top: 322px
+    }
+    .h2-cuidado-personal {
+        margin-top: 322px
+    }
+    .h2-talleres {
+        margin-top: 322px
+    }
+}
+
+@media(max-width: 768px){
+    header {
+        height: 45vh;
+    }
+    .logo {
+        display: none;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 15%;
+        font-size: 0.8rem;
+        gap: 10px;
+        padding: 10px;
+    }
+    .section-3 h3 {
+        font-size: 30px;
+        grid-row: 1 / 2;
+    }
+    .logo-footer {
+        display: none;
+    }
+}
+
+
+@media(max-width: 425px){
+    nav ul {
+        width: 30%;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        margin-left: 20px;
+    }
+    .div-2 {
+        display: none;
+    }
+    .div-4 {
+        grid-column: 1 / 12;
+        text-align: center;
+        margin-left: 35px;
+    }
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-2 div {
+        width: 50%;
+        align-self: center;
+    }
+    .section-3 {
+        margin-top: 15px;
+        grid-template-rows: repeat(5, 23%)
+    }
+    .section-3 h3 {
+        grid-row: 2 / 3;
+    }
+    .img-terapias {
+        grid-column: 1 / 3;
+        margin-left: 20px;
+    }
+    .img-recursos {
+        grid-column: 3 / 5;
+        margin-left: 20px;
+    }
+    .img-reiki {
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+        margin-left: 20px;
+    }
+    .img-esoterismo {
+        grid-column: 3 / 5;
+        margin-left: 20px;
+    }
+    .img-cuidado-personal {
+        grid-row: 4 / 5;
+        grid-column: 1 / 3;
+        margin-left: 20px;
+    }
+    .img-talleres {
+        grid-row: 4 / 5;
+        grid-column: 3 / 5;
+        margin-left: 20px;
+    }
+    .section-4 {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .h2-terapias {
+        margin-top: 307px;
+        margin-left: 40px;
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+    .h2-recursos {
+        margin-top: 307px;
+        margin-left: 145px;
+    }
+    .h2-reiki {
+        margin-top: 307px;
+        margin-left: 40px;
+        grid-row: 3/4;
+        grid-column: 1 / 3;
+    }
+    .h2-esoterismo {
+        margin-top: 307px;
+        margin-left: 328px;
+    }
+    .h2-cuidado-personal {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+        margin-left: 29px;
+    }
+    
+    .h2-talleres {
+        grid-row: 4 / 5;
+        grid-column: 3 / 4;
+        margin-left: 126px;
+    }
+    footer {
+        margin-left: 0;
+    }
+
 }
 
